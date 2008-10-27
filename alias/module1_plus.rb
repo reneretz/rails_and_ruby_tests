@@ -4,7 +4,6 @@ include ActiveSupport::CoreExtensions::Module
 module Module1
   def self.included(base)
     base.class_eval do
-      puts self
       alias_method_chain :foo, :bar      
     end
   end
